@@ -188,6 +188,11 @@ where
         self.len() == 0
     }
 
+    /// Returns a slice with the underlying data of the binary heap.
+    pub fn as_slice(&self) -> &[T] {
+        self.data.as_slice()
+    }
+
     /// Returns an iterator visiting all values in the underlying vector, in arbitrary order.
     ///
     /// ```
